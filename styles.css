@@ -28,13 +28,11 @@ body{
     font-family:"Aboreto";
     border-radius: 4px;
     margin: 10px 10px;
-    background-image:url(https://imgur.com/nky1rVf);
 }
 .container-fluid{
     background-color:#171717;
     padding: 10px 8px;
 }
-#carouselExampleIndicators{
-    background-color: aliceblue;
-    display: block;
+footer{
+    clear:both
 }
