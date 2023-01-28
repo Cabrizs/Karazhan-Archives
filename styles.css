@@ -1,18 +1,40 @@
 body{
-    background-color: gray;
+    background-color: #2e2e2e;
+    background-image:url(https://imgur.com/nky1rVf);
+}
+#nav-header{
+    padding:0px 0px
 }
 .nav-dropdown{
     display:inline-block
 }
 .navbar-brand{
     color:white;
+    font-family:"Aboreto";
+    text-align: center;
+    font-size: 40px;
 }
-header{
-    background-color:black;
+#search-button{
+    border-color:white;
+    color:white;
 }
-.navbar navbar-expand-lg bg-body-tertiary{
-    background-color:black;
+.dropdown-menu{
+    padding: 10px 10px;
+    background-color:#171717
 }
-button{
-    color:rgb(147, 59, 229)
+.dropdown-menu li{
+    padding:23px 30x;
+    text-align: center;
+    font-family:"Aboreto";
+    border-radius: 4px;
+    margin: 10px 10px;
+    background-image:url(https://imgur.com/nky1rVf);
+}
+.container-fluid{
+    background-color:#171717;
+    padding: 10px 8px;
+}
+#carouselExampleIndicators{
+    background-color: aliceblue;
+    display: block;
 }
