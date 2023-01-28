@@ -1,64 +1,80 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Karazhan Archives</title>
-  </head>
-  <body>
-    <div>
-      <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" id="nav-header">
-      <div class="container-fluid">
-        <img src="images/purple-portal-logo.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
-        <a class="navbar-brand" href="#">Karazhan Archives</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <img src="/images/Rogue-icon.png" width="70" heigh="100" class="dropdown-menu-img">
-                  <img src="/images/mage-icon.png" width="70" heigh="100" class="dropdown-menu-img">
-                  <a class="dropdown-item" href="#">Classes</a></li>
-                <li>
-                  <img src="/images/blue-shado-pan-riding-tiger.png" width="150" heigh="100" class="dropdown-menu-img">
-                  <a class="dropdown-item" href="#">Reputations</a></li>
-                <li>
-                  <img src="/images/tailoring.png" width="80" heigh="100" class="dropdown-menu-img">
-                  <a class="dropdown-item" href="#">Professions</a></li>
-                <li><img src="/images/Raszageth.png" width="150" height="110"> <a class="dropdown-item" href="#">End Game Content</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-secondary" id="search-button" type="submit">Search</button>
-          </form>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karazhan Archives</title>
+</head>
+
+<body>
+  <div>
+    <header class="inamovible">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" id="nav-header" class="inamovible">
+        <div class="container-fluid">
+          <img src="images/purple-portal-logo.png" alt="Logo" width="70" height="70"
+            class="d-inline-block align-text-top">
+          <a class="navbar-brand" href="#">Karazhan Archives</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <img src="images/Rogue-icon.png" width="70" heigh="100" class="dropdown-menu-img">
+                    <img src="images/mage-icon.png" width="70" heigh="100" class="dropdown-menu-img">
+                    <a class="dropdown-item" href="#">Classes</a>
+                  </li>
+                  <li>
+                    <img src="images/blue-shado-pan-riding-tiger.png" width="150" heigh="100"
+                      class="dropdown-menu-img">
+                    <a class="dropdown-item" href="#">Reputations</a>
+                  </li>
+                  <li>
+                    <img src="images/tailoring.png" width="80" heigh="100" class="dropdown-menu-img">
+                    <a class="dropdown-item" href="#">Professions</a>
+                  </li>
+                  <li><img src="images/Raszageth.png" width="150" height="110"> <a class="dropdown-item" href="#">End
+                      Game Content</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-secondary" id="search-button" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
-</div>
-  <section>
+      </nav>
+    </header>
+  </div>
+  <section class="content">
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
           <div class="container">
             <div class="carousel-caption text-start">
               <h1>Example headline.</h1>
@@ -68,7 +84,10 @@
           </div>
         </div>
         <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
           <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
@@ -78,7 +97,10 @@
           </div>
         </div>
         <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
           <div class="container">
             <div class="carousel-caption text-end">
               <h1>One more for good measure.</h1>
@@ -98,10 +120,84 @@
       </button>
     </div>
   </section>
+  <section>
+    <div class="parrafo prueba">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem amet esse, praesentium nam nesciunt tenetur
+        numquam laborum qui voluptas sequi quibusdam aspernatur unde soluta minima quidem voluptatibus consectetur ut
+        atque. Quod, illo est. Blanditiis consectetur quae atque dolorem expedita architecto fugiat pariatur recusandae
+        eligendi quisquam corrupti, mollitia sed fugit quos nisi voluptates veritatis dolore labore? Ipsum repellat,
+        esse dolorum quam maxime a dicta molestiae obcaecati reiciendis consectetur modi ullam repudiandae recusandae
+        beatae neque quasi eaque incidunt alias possimus nostrum, voluptatem ab? Asperiores magni obcaecati quam eaque?
+        Nulla eius ipsum error expedita et. Repellendus, dolor aut inventore saepe alias praesentium aspernatur aperiam,
+        velit odit perspiciatis cupiditate laudantium quasi totam, magnam dolores id nostrum quisquam ut. Molestias quos
+        veritatis cumque neque, quam aspernatur dolorum deleniti animi quae sed quisquam corporis placeat laborum quidem
+        excepturi ratione amet non laudantium! Reprehenderit dolorem exercitationem illo in ab quae corporis ex quam
+        aliquam fugit maxime pariatur, eius similique asperiores eum doloremque dolorum nisi, voluptatum alias iusto hic
+        nobis? Soluta minima ipsa hic aperiam voluptates. Voluptas deserunt alias, ipsam quas animi, provident dolorem
+        nostrum sunt ad, magnam non cumque aperiam? Impedit mollitia repellat, debitis id incidunt, voluptatum aperiam
+        quia obcaecati esse quasi eligendi magni eos, ipsam tempora at provident et sit amet aut sequi ab neque vitae
+        laboriosam possimus. Ipsam fugit excepturi quis harum expedita veritatis rem tempore voluptas iure, ad corrupti
+        nostrum, magni dolore suscipit deleniti sapiente aliquam obcaecati libero reiciendis fuga pariatur voluptate
+        commodi ipsum tempora? Molestias repudiandae, minima deleniti ducimus maxime incidunt! Temporibus tenetur
+        voluptatum doloribus quis veniam reprehenderit nobis vero quae quisquam? Eius explicabo accusantium unde eveniet
+        praesentium iste totam error ab perspiciatis. Blanditiis eligendi id iusto beatae ratione minus facilis
+        reiciendis atque modi, cumque saepe quibusdam ex deserunt expedita consequatur repellat in perspiciatis
+        incidunt? Facere quod voluptatem nihil ullam atque amet deserunt dolore reiciendis doloribus molestias odit
+        nesciunt, sunt porro minus voluptates culpa? Debitis iure sit, excepturi eligendi dolores, repellat mollitia
+        repudiandae porro, modi laudantium similique consequuntur adipisci quia maxime aliquid neque beatae accusamus
+        accusantium quae. Soluta dicta at ipsa iusto fugit repellat facere architecto ipsam natus. Nobis, minus
+        consequatur. Hic, accusamus. Accusamus similique, rem hic quam nobis cupiditate error facilis repudiandae,
+        maiores, ratione eum sit? Iste delectus minus placeat excepturi. Eaque commodi dignissimos, suscipit quod quos
+        incidunt voluptatum sunt dicta adipisci? Animi, autem. Minus, quidem est? Rem quaerat nihil aliquam. Quibusdam
+        aliquam ipsa deleniti. Necessitatibus vel ex sequi ducimus assumenda quae minus! Ex accusamus excepturi fuga
+        distinctio consequatur praesentium rerum, quidem quia eius quod quo reiciendis quas. Esse odit nihil, et aperiam
+        illum perspiciatis quaerat explicabo voluptatibus ipsa dolorem fugit, repudiandae eum enim ea! Maxime ab sequi
+        maiores, architecto harum animi? Eveniet totam nulla, veritatis tempore commodi temporibus saepe accusantium
+        dolores, nostrum distinctio aspernatur esse deserunt. Ea optio libero provident! Magnam praesentium sint ab
+        optio ipsam fuga nemo minima mollitia aliquid dolorum. Doloremque voluptate ratione minus, eos eum nam iusto
+        dolorem quia laboriosam placeat itaque sit enim nesciunt. Omnis natus, quos illum ad repellendus nam fuga esse
+        provident ex enim repellat voluptates id eius, officiis, architecto nemo sequi sint. Atque exercitationem
+        consectetur sunt cum, debitis alias aliquam ab minus magnam quis harum, eum quae. Quidem quae, iure fugit quos
+        mollitia unde est nam error recusandae nemo laborum omnis dolorum non molestias earum vel natus asperiores
+        aliquam perspiciatis placeat impedit ipsam. In temporibus voluptate architecto repudiandae! Harum vel nihil
+        fugiat, ratione maiores consectetur repellendus a facilis ducimus et, cupiditate minus amet neque porro illum
+        libero aut at quisquam omnis! Rem nostrum nobis facilis quidem repellat error expedita laboriosam repudiandae
+        totam, explicabo eligendi reiciendis ut cum incidunt voluptas, atque molestiae dicta odio quas! Pariatur minima
+        dolores nemo molestiae doloribus. Totam deserunt alias ratione, architecto voluptate rerum. Dolorum ad, maiores
+        voluptatem nostrum corporis dolorem maxime nulla voluptatum officia perspiciatis distinctio eum voluptate eaque
+        ratione iure praesentium repellat assumenda. Cupiditate, delectus accusantium minus minima harum illum magni
+        soluta ab molestiae consectetur iste consequatur quisquam reiciendis repellat fuga corporis. Rem, repellat sequi
+        in pariatur quasi sint sunt laudantium atque possimus hic ipsam earum placeat non nemo, delectus iste soluta
+        similique, nobis alias odio est unde quam! Vero dignissimos officia in sunt? Beatae mollitia assumenda incidunt
+        voluptatibus repudiandae iste eaque esse, qui sapiente ab distinctio. Magni animi commodi incidunt doloremque
+        maxime vel laudantium aut, quod sunt inventore, repellendus autem quibusdam enim voluptate architecto maiores
+        assumenda velit asperiores delectus dolor saepe unde nesciunt. Praesentium aut, architecto similique, dolore eos
+        ab ut laudantium officiis nobis sapiente, maxime molestias sunt? Possimus eius voluptates accusamus id
+        consequuntur itaque sit, inventore quod. Tempore impedit nulla minus eos assumenda, voluptatem neque aut
+        obcaecati magnam ex mollitia vero asperiores corrupti ipsa quis non dolorem quaerat facilis eum laboriosam
+        suscipit voluptates ad! Minima voluptate explicabo reiciendis aspernatur fuga aut, ullam eius cum
+        exercitationem. Aliquam architecto vitae reiciendis obcaecati? Fuga quos laboriosam cum eum repellendus
+        voluptatum quibusdam laudantium aliquam reprehenderit doloribus iure ex officiis explicabo, id provident natus,
+        veritatis aliquid quia, quis dignissimos distinctio vero. Quas vero consequuntur, quos nulla hic rerum a
+        aspernatur, enim corrupti sapiente voluptatem unde iure quasi nemo pariatur doloribus. Quidem obcaecati, atque
+        dolore, doloremque et quia quae molestiae omnis quod quasi beatae placeat debitis provident totam dolor deserunt
+        inventore eaque id optio, aut cum? Deleniti numquam deserunt quo rerum odit expedita, dolores nam est debitis
+        blanditiis veniam consequatur a sed commodi nisi incidunt laboriosam maiores natus. At repellendus excepturi
+        animi incidunt iusto nostrum pariatur suscipit ipsa eveniet eum placeat, totam ducimus. Quam ab magnam rerum
+        amet perferendis adipisci doloribus dicta magni sit placeat, tempore temporibus. Ex id alias vero molestias
+        asperiores qui harum, nesciunt in tempore molestiae debitis error illum quibusdam explicabo officia architecto,
+        consectetur recusandae eos corrupti dolorum consequuntur cupiditate! Ipsum officia obcaecati placeat, eligendi
+        non corporis qui enim veritatis, accusantium eius dolore eveniet. Corporis beatae nobis architecto earum
+        similique officia, ad mollitia excepturi! Vitae voluptate, non ex totam autem excepturi explicabo quisquam
+        laudantium. Quod, iste vitae reiciendis, voluptates aperiam vero deleniti quasi nemo magnam cum nobis laborum
+        numquam sit repellat fuga sunt, nisi delectus rerum sapiente repellendus odio modi.</p>
+    </div>
+  </section>
   <footer>
   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
-
-

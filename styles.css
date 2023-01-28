@@ -16,7 +16,7 @@ body{
 }
 #search-button{
     border-color:white;
-    color:black;
+    color:white;
 }
 .dropdown-menu{
     padding: 10px 10px;
@@ -36,3 +36,8 @@ body{
 footer{
     clear:both
 }
+.content{
+    display:block
+}
+.inamovible nav{
+}    
