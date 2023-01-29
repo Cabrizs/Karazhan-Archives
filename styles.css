@@ -1,43 +1,100 @@
-body{
+body {
     background-color: #2e2e2e;
-    background-image:url(https://imgur.com/nky1rVf);
+    background-image: image();
+    margin-top: 0%;
+    padding-top: 0%
 }
-#nav-header{
-    padding:0px 0px
+
+#nav-header {
+    padding: 0px 0px
 }
-.nav-dropdown{
-    display:inline-block
+
+.nav-dropdown {
+    display: inline-block
 }
-.navbar-brand{
-    color:white;
-    font-family:"Aboreto";
+
+.navbar-brand {
+    color: white;
+    font-family: "Aboreto";
     text-align: center;
     font-size: 40px;
 }
-#search-button{
-    border-color:white;
-    color:white;
+
+#search-button {
+    border-color: white;
+    color: white;
 }
-.dropdown-menu{
-    padding: 10px 10px;
-    background-color:#171717
+
+.dropdown-menu {
+    padding: 0px 10px;
+    margin-top:0px;
+    background-color:rgba(255, 255, 255, 0);
+    border-color:rgba(255, 255, 255, 0);
 }
-.dropdown-menu li{
-    padding:23px 30x;
+
+.dropdown-menu li {
+    padding: 3px 7px;
     text-align: center;
-    font-family:"Aboreto";
-    border-radius: 4px;
-    margin: 10px 10px;
+    font-family: "Aboreto";
+    border-radius: 10%;
+    margin:1px 1px;
+    background-image: url(https://media.giphy.com/media/tRSabV3bbYWXAKG1FX/giphy-downsized-large.gif);
+    background-position: center center;
 }
-.container-fluid{
-    background-color:#171717;
+
+.dropdown-item{
+    padding: 5px 10px
+}
+.container-fluid {
+    background-color: #171717;
     padding: 10px 8px;
 }
-footer{
-    clear:both
+
+footer {
+    clear: both
 }
-.content{
-    display:block
+
+.content {
+    display: block;
+    z-index: 1;
+    padding-top: 5.75rem;
+    width: 100%;
+    margin: 0px 0px;
 }
-.inamovible nav{
-}    
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 35rem;
+}
+.p-4{
+    background-color:white;
+}
+
+.mb-2 {
+    margin-bottom: 0rem!important;
+}
+.row{
+    --bs-gutter-x: 0rem;
+}
+.col-md-6{
+    padding-right: 4px;
+    padding-left: 4px;
+}
+.bd-placeholder-img-news2{
+    background-image: url(https://pbs.twimg.com/media/CEV3O6oWYAAQrmV.jpg);
+}
