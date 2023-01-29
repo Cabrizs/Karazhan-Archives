@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_classes.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Classes</title>
+</head>
+
+<body>
+    <div>
+        <header class="inamovible">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" id="nav-header"
+                class="inamovible">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <img src="images/purple-portal-logo.png" alt="Logo" width="70" height="70"
+                        class="d-inline-block align-text-top">
+                    <!-- Title -->
+                    <a class="navbar-brand" href="#">Karazhan Archives</a>
+                    <!-- Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- dropdown -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                </a>
+                                <!-- dropdown principal menu -->
+                                <ul class="dropdown-menu">
+                                    <!-- classes -->
+                                    <li>
+                                        <img src="images/Rogue-icon.png" width="70" heigh="100"
+                                            class="dropdown-menu-img">
+                                        <img src="images/mage-icon.png" width="70" heigh="100"
+                                            class="dropdown-menu-img">
+                                        <a class="dropdown-item" href="classes.html">Classes</a>
+                                    </li>
+                                    <!-- Reputations -->
+                                    <li>
+                                        <img src="images/blue-shado-pan-riding-tiger.png" width="150" heigh="100"
+                                            class="dropdown-menu-img">
+                                        <a class="dropdown-item" href="#">Reputations</a>
+                                    </li>
+                                    <li>
+                                        <!-- Professions -->
+                                        <img src="images/tailoring.png" width="80" heigh="100"
+                                            class="dropdown-menu-img">
+                                        <a class="dropdown-item" href="#">Professions</a>
+                                    </li>
+                                    <!-- End game -->
+                                    <li><img src="images/Raszageth.png" width="150" height="110"> <a
+                                            class="dropdown-item" href="#">End
+                                            Game Content</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- Search bar -->
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-secondary" id="search-button" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        View All Classes
+    </button>
+
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="images_class/wowicon.png" alt="icon_class"
+                    width="30" height="30" class="d-inline-block align-text-top"> Classes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <!-- Lista de clases lateral -->
+                <div class="list-group">
+
+                    <!-- Death Knight -->
+                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="deathknight"><img src="images_class/dkicon.png" alt="icon_class" width="80"
+                                    height="70" class="d-inline-block align-text-top"> Death Knight</h5>
+                        </div>
+                        <p class="mb-1">The plague rages and the world trembles with its power.</p>
+                        <small class="deathknight">Blood - Unholy - Frost </small>
+                        <section>
+                            <!-- Default dropend button -->
+                            <div class="btn-group dropend">
+                                <button id ="buttondk" type="button" class="btn btn-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <!-- Dropdown interfaces -->
+                                </ul>
+                            </div>
+                        </section>
+                    </a>
+                    <!-- Demon Hunter -->
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="demonhunter">Demon Hunter</h5>
+                        </div>
+                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                        <small class="demonhunter">Devastation - Vengance</small>
+                        <section>
+                            <!-- Default dropend button -->
+                            <div class="btn-group dropend" class ="demonhunter">
+                                <button id ="buttondh" type="button" class="btn btn-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <!-- Dropdown interfaces -->
+                                </ul>
+                            </div>
+                        </section>
+                    </a>
+                    <!-- Druid -->
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="druid">Druid</h5>
+                        </div>
+                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                        <small class="druid">GUARDIAN - FERAL - BALANCE - RESTAURATION</small>
+                    </a>
+                    <!-- Evoker -->
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="evoker">Evoker</h5>
+                        </div>
+                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                        <small class="evoker">Devastation - RESTAURATION</small>
+                    </a>
+                    <!-- Hunter -->
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="hunter">Hunter</h5>
+                        </div>
+                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                        <small class="hunter">Markmanship - BeastMastery - Survival</small>
+                    </a>
+                    <!-- Mage -->
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="Mage">Mage</h5>
+                        </div>
+                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                        <small class="mage">Arcane - Frost - Fire</small>
+                    </a>
+                    <!-- Monk -->
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="monk">Monk</h5>
+                        </div>
+                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                        <small class="monk">Mistweaver - Windwalker - BrewMaster</small>
+                    </a>
+                    <!-- Paladin -->
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="paladin">Paladin</h5>
+                        </div>
+                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                        <small class="paladin">Protection - Holy - Retribution</small>
+                    </a>
+                    <!-- Priest -->
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="priest">Priest</h5>
+                        </div>
+                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                        <small class="priest">Holy - Discipline - Shadow </small>
+                    </a>
+                    <!-- Rogue -->
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="rogue">Rogue</h5>
+                        </div>
+                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                        <small class="rogue">Assesination - Outlaw - Suty</small>
+                    </a>
+                    <!-- Shaman -->
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="shaman">Shaman</h5>
+                        </div>
+                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                        <small class="shaman">Elemental - Enhance - RESTAURATION </small>
+                    </a>
+                    <!-- Warlock -->
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="warlock">Warlock</h5>
+                        </div>
+                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                        <small class="warlock">Destuction - Demonology - Affliction </small>
+                    </a>
+                    <!-- Warrior -->
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="warrior">Warrior</h5>
+                        </div>
+                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                        <small class="warrior">Protection - Fury - Arms</small>
+                    </a>
+                </div>
+            </div>
+
+            <section class="bodyinfo">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis enim recusandae, pariatur molestias
+                    dignissimos maiores iste tenetur distinctio facere repellat dolorem reprehenderit ab voluptate odit
+                    eos
+                    aliquid amet eum repellendus.</p>
+            </section>
+            <footer>
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
